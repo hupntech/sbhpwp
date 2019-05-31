@@ -1,0 +1,34 @@
+@import "partials/home";
+@import "partials/contact";
+@import "partials/media";
+
+// MIXINS \\
+// PSEUDO
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+// VENDOR PREFIX
+@mixin css3-prefix($prop, $value) {
+   -webkit-#{$prop}: #{$value};
+   -moz-#{$prop}: #{$value};
+   -ms-#{$prop}: #{$value};
+   -o-#{$prop}: #{$value};
+   #{$prop}: #{$value};
+}
+// POSTIIONING
+@mixin abs-position ($top, $right, $bottom, $left) {
+   position: absolute; 
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+// COLOR VARIABLES \\
+
+
+
+
+
